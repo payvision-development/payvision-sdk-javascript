@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ValueObject validates required 1`] = `"Property [testVal] is required on [ValueObject]"`;
-
-exports[`ValueObject validates type string 1`] = `"Property [testVal] expected a string, got [number] [123] on [ValueObject]"`;
-
-exports[`ValueObject validates type string 2`] = `"Property [testVal] expected a string, got [boolean] [true] on [ValueObject]"`;
-
-exports[`ValueObject validates type string 3`] = `"Property [testVal] expected a string, got [boolean] [true] on [ValueObject]"`;

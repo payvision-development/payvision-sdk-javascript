@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ApiConnection does basic validation of the httpClient in the constructor 1`] = `"Custom httpClient needs to implement a config function"`;
-
-exports[`ApiConnection does basic validation of the httpClient in the constructor 2`] = `"Custom httpClient needs to implement a send function"`;

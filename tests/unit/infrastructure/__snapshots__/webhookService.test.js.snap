@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`webhookService verifyWebhook throws when checksum does not match 1`] = `"Invalid crc32."`;
-
-exports[`webhookService verifyWebhook throws when jwt does not match secret 1`] = `"invalid token"`;
-
-exports[`webhookService verifyWebhook throws when jwt is malformed 1`] = `"jwt malformed"`;
