@@ -1,8 +1,6 @@
-# Payvision JS SDK
+# Payvision Javascript SDK
 
-> Codebase for Payvision JS SDK
-
-This is the official JS SDK for the Payvision payment platform (<https://www.payvision.com>).
+This is the official Javascript SDK for the Payvision payment platform (<https://www.payvision.com>).
 It can be used to make use of the following features of the Payvision API:
 
 - Payments
@@ -25,7 +23,7 @@ It can be used to make use of the following features of the Payvision API:
 
 A simple example implementation can be found [here](example/simple.js)
 
-The different json bodies the API accepts can be found in the documentation of the [Payvision API](https://developers.acehubpaymentservices.com/).
+The different json bodies the API accepts can be found in the documentation of the [Payvision API](https://developers.acehubpaymentservices.com/reference).
 
 To initialize the SDK you need to supply it with a username, password, businessId and a baseUri, optionally you can add a webhookSecret if you will be handling webhooks using the SDK.
 
@@ -45,7 +43,7 @@ The following methods are currently provided on the SDK.
 
 - `payvision.payments.newPayment(json)`
 - `payvision.payments.captureTransaction(json, id)`
-- `payvision.payments.captureTransaction(json, id)`
+- `payvision.payments.cancelTransaction(json, id)`
 - `payvision.payments.refundTransaction(json, id)`
 - `payvision.payments.getPayments(businessId, trackingCode)`
 - `payvision.payments.getTransactionStatus(id, businessId)`
