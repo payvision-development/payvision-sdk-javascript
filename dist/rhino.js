@@ -128,9 +128,7 @@ var CheckoutsApi = __webpack_require__(62);
 
 var LinksApi = __webpack_require__(95);
 
-var PayvisionSDK =
-/*#__PURE__*/
-function () {
+var PayvisionSDK = /*#__PURE__*/function () {
   function PayvisionSDK(_ref) {
     var username = _ref.username,
         password = _ref.password,
@@ -185,7 +183,7 @@ module.exports = PayvisionSDK;
 /***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -194,9 +192,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 /* eslint no-restricted-globals: 0 */
-var ValueObject =
-/*#__PURE__*/
-function () {
+var ValueObject = /*#__PURE__*/function () {
   function ValueObject() {
     _classCallCheck(this, ValueObject);
   }
@@ -289,9 +285,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var HttpClient = __webpack_require__(3); // null on RHINO build via Webpack
 
 
-var ApiConnection =
-/*#__PURE__*/
-function () {
+var ApiConnection = /*#__PURE__*/function () {
   function ApiConnection(_ref) {
     var username = _ref.username,
         password = _ref.password,
@@ -386,7 +380,9 @@ module.exports = ApiConnection;
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -397,7 +393,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 /**
- * @copyright Copyright (c) 2019 Payvision B.V. (https://www.payvision.com/)
+ * @copyright Copyright (c) 2020 Payvision B.V. (https://www.payvision.com/)
  * @license see LICENCE.TXT
  *
  * Warning! This file is auto-generated! Any changes made to this file will be deleted in the future!
@@ -422,9 +418,7 @@ var pv_ResponseRefund = __webpack_require__(53);
 
 var pv_StatusResponse = __webpack_require__(58);
 
-var Api =
-/*#__PURE__*/
-function () {
+var Api = /*#__PURE__*/function () {
   function Api() {
     _classCallCheck(this, Api);
   }
@@ -551,9 +545,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Request =
-/*#__PURE__*/
-function () {
+var Request = /*#__PURE__*/function () {
   function Request(_ref) {
     var uri = _ref.uri,
         _ref$method = _ref.method,
@@ -633,7 +625,9 @@ module.exports = Request;
 /***/ 62:
 /***/ (function(module, exports, __webpack_require__) {
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -644,7 +638,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 /**
- * @copyright Copyright (c) 2019 Payvision B.V. (https://www.payvision.com/)
+ * @copyright Copyright (c) 2020 Payvision B.V. (https://www.payvision.com/)
  * @license see LICENCE.TXT
  *
  * Warning! This file is auto-generated! Any changes made to this file will be deleted in the future!
@@ -657,9 +651,7 @@ var pv_CheckoutResponse = __webpack_require__(76);
 
 var pv_StatusResponse = __webpack_require__(83);
 
-var Api =
-/*#__PURE__*/
-function () {
+var Api = /*#__PURE__*/function () {
   function Api() {
     _classCallCheck(this, Api);
   }
@@ -716,7 +708,9 @@ module.exports = Api;
 /***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -727,7 +721,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 /**
- * @copyright Copyright (c) 2019 Payvision B.V. (https://www.payvision.com/)
+ * @copyright Copyright (c) 2020 Payvision B.V. (https://www.payvision.com/)
  * @license see LICENCE.TXT
  *
  * Warning! This file is auto-generated! Any changes made to this file will be deleted in the future!
@@ -744,9 +738,7 @@ var pv_StatusResponse = __webpack_require__(121);
 
 var pv_ResponseCancel = __webpack_require__(122);
 
-var Api =
-/*#__PURE__*/
-function () {
+var Api = /*#__PURE__*/function () {
   function Api() {
     _classCallCheck(this, Api);
   }
