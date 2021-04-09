@@ -6,29 +6,27 @@ beforeEach(() => {
   payvision = new Payvision(payvisionConfig)
 })
 describe('Ideal', () => {
-  const getPayment = amount => {
-    return payvision.payments.newPayment({
-      action: 'payment',
-      header: {
-        businessId: '325668',
+  const getPayment = amount => payvision.payments.newPayment({
+    action: 'payment',
+    header: {
+      businessId: '325668',
+    },
+    body: {
+      transaction: {
+        trackingCode: `test-unique-number-${Date.now()}`,
+        brandId: 3010,
+        amount,
+        currencyCode: 'EUR',
+        returnUrl: 'http://www.example.com',
+        descriptor: 'descriptor',
+        purchaseId: '1234',
       },
-      body: {
-        transaction: {
-          trackingCode: `test-unique-number-${Date.now()}`,
-          brandId: 3010,
-          amount,
-          currencyCode: 'EUR',
-          returnUrl: 'http://www.example.com',
-          descriptor: 'descriptor',
-          purchaseId: '1234',
-        },
-        bank: {
-          countryCode: 'NL',
-          issuerId: 20,
-        },
+      bank: {
+        countryCode: 'NL',
+        issuerId: 20,
       },
-    })
-  }
+    },
+  })
   describe('newPayment', () => {
     let result
     beforeEach(async () => {

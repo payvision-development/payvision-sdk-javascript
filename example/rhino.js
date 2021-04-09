@@ -1,4 +1,4 @@
-var Payvision = require('../dist/rhino')
+const Payvision = require('../dist/rhino')
 
 const payvision = new Payvision({
   // global configuration data
@@ -15,7 +15,7 @@ const paymentRequest = payvision.payments.newPayment({
     businessId: '325668',
   },
   body: {
-    transaction: new Transaction({
+    transaction: {
       trackingCode: `test-unique-number-${Date.now()}`,
       brandId: 3010,
       amount: '1.00',
@@ -23,7 +23,7 @@ const paymentRequest = payvision.payments.newPayment({
       returnUrl: 'http://www.example.com',
       descriptor: 'descriptor',
       purchaseId: '1234',
-    }),
+    },
     bank: {
       countryCode: 'NL',
       issuerId: 20,
@@ -31,4 +31,4 @@ const paymentRequest = payvision.payments.newPayment({
   },
 })
 
-console.log('paymentRequest', paymentRequest)
+console.log('paymentRequest', paymentRequest) // eslint-disable-line no-console

@@ -2,7 +2,6 @@
 /* eslint no-console: 0 */
 require('dotenv').config()
 const Payvision = require('../src/sdk')
-const Transaction = require('../src/domain/payments/valueObject/Transaction')
 
 const init = async () => {
   const payvision = new Payvision({
@@ -20,7 +19,7 @@ const init = async () => {
       businessId: '325668',
     },
     body: {
-      transaction: new Transaction({
+      transaction: {
         trackingCode: `test-unique-number-${Date.now()}`,
         brandId: 3010,
         amount: '1.00',
@@ -28,7 +27,7 @@ const init = async () => {
         returnUrl: 'http://www.example.com',
         descriptor: 'descriptor',
         purchaseId: '1234',
-      }),
+      },
       bank: {
         countryCode: 'NL',
         issuerId: 20,

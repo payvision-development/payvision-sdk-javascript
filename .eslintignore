@@ -1,1 +1,7 @@
 dist
+Jenkinsfile
+package.json
+package-lock.json
+*.md
+sonar-project.properties
+webpack*.js

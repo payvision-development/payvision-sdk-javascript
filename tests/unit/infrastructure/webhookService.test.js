@@ -5,7 +5,6 @@ const ResponseRequest = require('../../../src/domain/payments/valueObject/Paymen
 const RefundResponseRequest = require('../../../src/domain/payments/valueObject/Refund/Response')
 
 describe('webhookService', () => {
-
   describe('verifyWebhook', () => {
     const payload = '{"foo":"bar"}'
     const eventSignature = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb21lIjoiZGF0YSIsImNyYzMyIjoiN19Vcl9nIn0.1zgPSLhg5xzRLZHi4wjyKS-bgJwFXufg6Mdabtz6uuE'
