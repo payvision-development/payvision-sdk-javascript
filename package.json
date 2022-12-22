@@ -21,7 +21,7 @@
   "homepage": "https://github.com/payvision-development/payvision-sdk-javascript",
   "dependencies": {
     "crc": "^3.8.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "request": "^2.88.2"
   },
   "devDependencies": {
